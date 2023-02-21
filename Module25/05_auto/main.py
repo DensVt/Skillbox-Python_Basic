@@ -1,0 +1,18 @@
+from classes import Bus
+
+ikarus = Bus(0, 0, 0)
+ikarus.turn("влево", 5000)
+ikarus.process(-10)
+ikarus.process(160)
+print("--------------------------------------------------")
+ikarus.take_passengers(11)
+ikarus.turn("влево", 70)
+ikarus.process(-70)
+ikarus.process(700)
+print("--------------------------------------------------")
+ikarus.let_passengers_go(3)
+ikarus.turn("вправо", 100)
+ikarus.process(-50)
+ikarus.process(200)
+print("--------------------------------------------------")
+print(f"Всего заработано: {ikarus.get_money()} рублей")
